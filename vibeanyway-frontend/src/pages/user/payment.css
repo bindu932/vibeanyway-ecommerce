@@ -1,0 +1,178 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #000;
+  overflow-x: hidden;
+}
+
+.payment-page {
+  min-height: 100vh;
+  width: 100vw;
+  background: url('src/assets/Purple and White Simple Credit Card Hacks Tips and Tricks Instagram Post.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 60px 20px 40px;
+  box-sizing: border-box;
+  color: #fff;
+  backdrop-filter: blur(6px);
+}
+
+.payment-heading {
+  font-size: 2.5rem;
+  color: #00fff2;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+  margin-bottom: 30px;
+}
+
+.payment-card {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  width: 320px;
+  box-shadow: 0 12px 32px rgba(0, 255, 255, 0.2);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.payment-card:hover {
+  transform: translateY(-5px);
+}
+
+.payment-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 16px;
+  box-shadow: 0 6px 16px rgba(255, 255, 255, 0.25);
+}
+
+.payment-card h3 {
+  font-size: 1.4rem;
+  color: #00ffe7;
+  margin: 10px 0;
+}
+
+.payment-card strong {
+  font-size: 1.2rem;
+  color: #ffc107;
+}
+
+.payment-subtitle {
+  margin: 24px 0 12px;
+  font-size: 1.1rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+}
+
+textarea {
+  width: 90%;
+  max-width: 500px;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  resize: none;
+  background: rgba(255, 255, 255, 0.85);
+  color: #000;
+  margin-bottom: 20px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+input[type="file"] {
+  margin-top: 12px;
+  padding: 6px 10px;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: none;
+  color: #000;
+  background: rgba(255, 255, 255, 0.9);
+  width: fit-content;
+  max-width: 220px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  display: inline-block;
+}
+
+button {
+  background: linear-gradient(135deg, #00eaff, #0077ff);
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  margin-top: 16px;
+  transition: transform 0.25s ease, background 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 255, 255, 0.3);
+  width: fit-content;
+  max-width: 250px;
+  white-space: nowrap;
+  text-align: center;
+}
+
+button:hover {
+  transform: scale(1.04);
+  background: linear-gradient(135deg, #00cfff, #0055ff);
+}
+
+.payment-qr {
+  width: 220px;
+  border: 2px dashed #00ffe7;
+  border-radius: 14px;
+  padding: 12px;
+  margin-top: 10px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 8px 24px rgba(0, 255, 255, 0.3);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .payment-heading {
+    font-size: 2rem;
+  }
+
+  .payment-card {
+    width: 90%;
+    padding: 20px;
+  }
+
+  textarea {
+    width: 95%;
+  }
+
+  button {
+    font-size: 0.9rem;
+    padding: 8px 14px;
+    width: fit-content;
+    max-width: 180px;
+  }
+
+  input[type="file"] {
+    width: fit-content;
+    max-width: 200px;
+  }
+
+  .payment-qr {
+    width: 180px;
+  }
+}
+.navbar {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  height: 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}

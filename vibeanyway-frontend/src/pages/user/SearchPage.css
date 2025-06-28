@@ -1,0 +1,213 @@
+:root {
+  --bg-url: url('src/assets/Sage Green Minimalist Natural Search Bar List Facebook Post.jpg'); 
+}
+
+.search-page {
+  min-height: 100vh;
+  background: var(--bg-url) no-repeat center center fixed;
+  background-size: cover;
+  padding: 80px 20px 40px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  backdrop-filter: blur(4px);
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.search-heading {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 1000;
+  color: #e0e5e5;
+  margin-bottom: 30px;
+  text-shadow: 0 0 12px #181818, 0 0 18px #c5c9c9;
+  animation: glow 2s ease-in-out infinite alternate;
+  /* background-color: rgba(234, 245, 250, 0.5); */
+  padding: 12px 24px;
+  border-radius: 10px;
+  display: inline-block;
+  backdrop-filter: blur(30px);
+}
+
+/* Glow Animation */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ccd7d8, 0 0 20px #00f7ff;
+  }
+  to {
+    text-shadow: 0 0 20px #00eaff, 0 0 30px #00f7ff;
+  }
+}
+
+.search-input {
+  display: block;
+  margin: 0 auto 50px auto;
+  padding: 14px 24px;
+  width: 90%;
+  max-width: 500px;
+  font-size: 1.1rem;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  box-shadow: 0 0 12px #00eaff;
+  transition: 0.3s ease-in-out;
+}
+
+.search-input:focus {
+  box-shadow: 0 0 18px #00f7ff, 0 0 24px #00eaff;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.product-card {
+  background: rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 0 14px rgba(0, 255, 255, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+.product-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #00eaff;
+  margin: 10px 0 5px;
+  text-shadow: 0 0 5px #00f7ff;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin: 4px 0;
+}
+
+.product-card p strong {
+  color: #ff4c9b;
+  font-size: 1.05rem;
+}
+
+.product-card button {
+  margin-top: 10px;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 25px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-weight: 600;
+  margin-right: 10px;
+  transition: 0.2s ease-in-out;
+}
+
+.product-card button:disabled {
+  background-color: #444;
+  cursor: not-allowed;
+  color: #ccc;
+}
+
+.product-card button:not(:disabled):first-of-type {
+  background: #ff0080;
+  color: white;
+  box-shadow: 0 0 6px #ff0080;
+}
+
+.product-card button:not(:disabled):last-of-type {
+  background: #00eaff;
+  color: black;
+  box-shadow: 0 0 6px #00eaff;
+}
+
+.product-card button:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: scale(1.02);
+}
+
+.product-list p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #fff;
+  background-color: rgba(0,0,0,0.5);
+  padding: 10px;
+  border-radius: 8px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .search-heading {
+    font-size: 2.5rem;
+  }
+
+  .search-input {
+    width: 95%;
+    font-size: 1rem;
+  }
+
+  .product-card img {
+    height: 200px;
+  }
+
+  .product-card {
+    padding: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .search-heading {
+    font-size: 2rem;
+    padding: 10px 16px;
+  }
+
+  .search-input {
+    padding: 12px 20px;
+  }
+
+  .product-card img {
+    height: 180px;
+  }
+
+  .product-card h3 {
+    font-size: 1rem;
+  }
+
+  .product-card p {
+    font-size: 0.9rem;
+  }
+
+  .product-card button {
+    font-size: 0.8rem;
+    padding: 8px 12px;
+  }
+}
+.navbar {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  height: 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}

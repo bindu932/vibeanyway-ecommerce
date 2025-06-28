@@ -1,0 +1,43 @@
+.complete-order {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background: url('src/assets/Thankyou.jpg') no-repeat center center/cover;
+  color: #fff;
+  text-align: left;
+  padding: 40px 60px;
+}
+
+.complete-order h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #00ffcc;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.complete-order p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.complete-order .search-btn {
+  margin-top: 30px;
+  padding: 12px 24px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  background-color: #00ffcc;
+  color: #000;
+  cursor: pointer;
+  transition: 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.complete-order .search-btn:hover {
+  background-color: #00ddb3;
+  transform: scale(1.05);
+}

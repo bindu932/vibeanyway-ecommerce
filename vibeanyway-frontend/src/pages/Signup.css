@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.signup-page {
+  height: 100vh;
+  width: 100vw;
+  background: url("B:\PROJECTS TRAINING\PROJECTS\vibeanyway\vibeanyway-frontend\src\assets\Aesthetic fashion collection presentation (1).jpg") no-repeat center center/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-box {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  padding: 60px 40px;
+  width: 95%;
+  max-width: 450px;
+  color: rgb(32, 30, 30);
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.signup-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.form input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(9, 9, 9);
+}
+
+.form input::placeholder {
+  color: #0d0d0d;
+}
+
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(21, 21, 21);
+  background: linear-gradient(to right, #06b6d4, #2563eb);
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: linear-gradient(to right, #0284c7, #1e40af);
+}
+
+.login-redirect {
+  margin-top: 16px;
+  font-size: 20px;
+  color: #111010;
+}
+
+.login-redirect span {
+  color: #0f0f10;
+  cursor: pointer;
+  text-decoration: underline;
+}

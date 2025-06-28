@@ -1,0 +1,142 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", sans-serif;
+  background: url("../../assets/prof.png") no-repeat center center fixed;
+  background-size: cover;
+  color: #0f0d0d;
+}
+
+.edit-product-page {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(6px);
+}
+
+.edit-product-page h2 {
+  font-size: 2.2rem;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 2px #ccc;
+}
+
+.edit-product-form {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.edit-product-form img {
+  width: 180px;
+  height: auto;
+  border-radius: 12px;
+  align-self: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.edit-product-form input,
+.edit-product-form textarea,
+.edit-product-form select {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #000;
+  background-color: #fff;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 12px;
+}
+
+.edit-product-form input:focus,
+.edit-product-form select:focus,
+.edit-product-form textarea:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.edit-product-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.size-selector {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.size-btn {
+  padding: 10px 16px;
+  border-radius: 8px;
+  border: 2px solid #007bff;
+  background-color: #fff;
+  color: #007bff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.size-btn.selected {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.size-btn:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+.edit-product-form label {
+  font-weight: 600;
+  color: #333;
+}
+
+.edit-product-form label input {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.edit-product-form button {
+  padding: 14px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #28a745;
+  color: rgb(11, 10, 10);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  margin-top: 10px;
+}
+
+.edit-product-form button:hover {
+  background-color: #218838;
+  transform: scale(1.02);
+}
+
+.edit-product-form button + button {
+  background-color: #dc3545;
+}
+
+.edit-product-form button + button:hover {
+  background-color: #c82333;
+}
+
+.status-message {
+  margin-top: 15px;
+  font-weight: bold;
+  text-align: center;
+  color: #333;
+}

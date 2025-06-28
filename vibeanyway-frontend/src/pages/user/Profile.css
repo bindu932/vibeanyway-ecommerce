@@ -1,0 +1,164 @@
+/* Full page background */
+.profile-page {
+  background: url("src/assets/prof.png") no-repeat center center fixed;
+  background-size: cover;
+  min-height: 100dvh;
+    width: 100vw;/* full height on mobile too */
+  padding-top: 120px;
+  font-family: "Segoe UI", sans-serif;
+  color: #fff;
+  position: relative;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Heading */
+.profile-heading {
+  text-align: center;
+  font-size: 48px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #ffffff;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Main container */
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+/* Box styling */
+.profile-box {
+  background: linear-gradient(to bottom right, #0f2027, #203a43, #2c5364);
+  padding: 30px 35px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+  color: #ffffff;
+}
+
+.profile-box:hover {
+  transform: translateY(-3px);
+}
+
+/* Paragraphs */
+.profile-box p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #ffffffcc;
+}
+
+/* Input and Textarea */
+input,
+textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #ffffff10;
+  color: white;
+  outline: none;
+  transition: background-color 0.2s ease, border 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #ffffff20;
+  border: 1px solid #ffffff30;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin: 12px 10px 0 0;
+  padding: 12px 20px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.btn.green {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn.blue {
+  background-color: #007bff;
+  color: white;
+}
+
+.btn.purple {
+  background-color: #6f42c1;
+  color: white;
+}
+
+.btn.red {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Saved address */
+.saved-address {
+  margin-top: 15px;
+  background: #ffffff10;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #28a745;
+  color: #fff;
+}
+
+.saved-address p {
+  margin: 5px 0;
+  font-size: 15px;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .profile-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .profile-heading {
+    font-size: 36px;
+  }
+}
+.navbar {
+  background: rgba(0, 0, 0, 0.85);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  height: 50px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  backdrop-filter: blur(5px);
+}

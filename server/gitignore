@@ -1,0 +1,4 @@
+# sensitive files
+server/.env
+server/serviceAccountKey.json.json
+vibeanyway-frontend/src/firebase.js

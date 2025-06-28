@@ -1,0 +1,87 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.login-page {
+  min-height: 100vh;
+  width: 100vw;
+  background: url("src/assets/Aesthetic fashion collection presentation.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.login-box {
+  background: rgba(174, 173, 158, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 50px;
+  width: 95%;
+  max-width: 450px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}
+
+.login-box input::placeholder {
+  color: #ddd;
+}
+.login-btn,
+.google-btn {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.login-btn {
+  background: linear-gradient(to right, #90cd40, #2563eb);
+}
+
+.google-btn {
+  background: linear-gradient(to right, #f87171, #ef4444);
+}
+
+.login-btn:hover {
+  background: linear-gradient(to right, #0284c7, #1e40af);
+}
+
+.google-btn:hover {
+  background: linear-gradient(to right, #dc2626, #991b1b);
+}
+
+.signup-link {
+  margin-top: 16px;
+  font-size: 20px;
+  color: #f1f1f1;
+}
+
+.link {
+  color: #00ffff;
+  cursor: pointer;
+  text-decoration: underline;
+}

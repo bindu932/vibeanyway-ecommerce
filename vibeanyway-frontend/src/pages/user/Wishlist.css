@@ -1,0 +1,140 @@
+.wishlist-page {
+  min-height: 100vh;
+  width: 100vw;
+  padding: 5px 10px;
+  background-image: url("src/assets/Brown and Beige Minimalist Photo Wishlist Facebook Post.jpg"); 
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+ 
+  overflow-x: hidden;
+}
+
+.wishlist-page::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  /* background: rgba(255, 255, 255, 0.6); */
+  z-index: 0;
+}
+
+.wishlist-page > * {
+  position: relative;
+  z-index: 1;
+}
+
+.wishlist-page h2 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+.wishlist-page p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+}
+.product-list {
+  width: 100%;
+  max-width: 1300px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  padding: 0 10px;
+}
+
+.product-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.product-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.07);
+}
+
+.product-card h3 {
+  font-size: 1.5rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.product-card p {
+  font-size: 0.95rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.product-card strong {
+  font-size: 1.2rem;
+  color: #e74c3c;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.actions button {
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  width: 100%;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.actions button:nth-child(1) {
+  background-color: #3498db;
+  color: #fff;
+}
+.actions button:nth-child(1):hover {
+  background-color: #2980b9;
+}
+
+.actions button:nth-child(2) {
+  background-color: #e74c3c;
+  color: #fff;
+}
+.actions button:nth-child(2):hover {
+  background-color: #c0392b;
+}
+
+.feedback {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #27ae60;
+  font-weight: 500;
+}
