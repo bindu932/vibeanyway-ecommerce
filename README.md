@@ -8,8 +8,7 @@
 
 
 
-## 🔧 Tech Stack
-
+ **🔧 Tech Stack**
 * **Frontend:** React.js, Tailwind CSS, Shadcn UI, Framer Motion
 * **Backend:** Node.js, Express.js, MongoDB Atlas
 * **Authentication & Storage:** Firebase Authentication (Email, Google Sign-In, OTP), Firebase Storage
